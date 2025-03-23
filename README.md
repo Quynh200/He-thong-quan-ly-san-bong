@@ -157,5 +157,108 @@ Phát hiện giờ cao điểm và thấp điểm đặt sân
 #### 3.6.4 Báo cáo tình trạng sân
 Xem số lần bảo trì sân 
 Phát hiện sân ít được thuê để có thể tối ưu được kinh doanh
+## 4.Sơ đồ use case cho từng bộ phận
+### 4.1.Use case quản lý sân bóng
+*Use Case: Người quản lý 
+**Actor (Người thực hiện): Quản lý sân bóng.
+-Mục tiêu chính: Quản lý hiệu quả hoạt động của sân bóng thông qua hệ thống.
+-Các bước thực hiện:
+Đăng nhập: Người quản lý đăng nhập vào hệ thống bằng tài khoản.
+-Quản lý sân bóng:
+Cập nhật thông tin sân bóng (tên sân, loại sân, trạng thái).
+Kiểm tra lịch trống và các lượt đặt sân.
+-Quản lý đặt sân:
+Xem danh sách các lượt đặt sân.
+Phê duyệt hoặc hủy đặt sân nếu cần thiết.
+-Quản lý tài chính:
+Theo dõi doanh thu từ các lượt đặt sân.
+Quản lý hóa đơn và xử lý thanh toán thủ công (nếu có).
+-Gửi thông báo:
+Thông báo cho khách hàng về thay đổi, khuyến mãi, hoặc hủy đặt sân.
+-Báo cáo: Xem các báo cáo tổng hợp về hoạt động, doanh thu, và lượt đặt sân.
+-Preconditions (Điều kiện tiên quyết):
+Người quản lý đã được cấp tài khoản.
+Hệ thống có dữ liệu sân bóng.
+-Postconditions (Kết quả):
+Thông tin sân và lịch đặt sân được cập nhật.
+Doanh thu được thống kê chính xác.
+-Các kịch bản phụ:
+Người quản lý quên mật khẩu: Sử dụng tính năng “Quên mật khẩu” để khôi phục.
+Khách hàng hủy đặt sân: Quản lý xác nhận và cập nhật lại trạng thái.
+![alt](http://docs.google.com/document/d/1P9xJ3b6TQ1Q9-gXcF6QlS1FxMi-BcYd2U9LOCRQ6R8k/edit?tab=t.e31fo8dd63me)
+### 4.2.Use case của nhân viên
+Use Case: Nhân viên hỗ trợ quản lý sân bóng
+
+*Actor (Người thực hiện): Nhân viên.
+ -Mục tiêu chính: Hỗ trợ vận hành, xử lý các yêu cầu và đảm bảo trải nghiệm khách hàng.
+Các bước thực hiện:
+
+ -Đăng nhập: Nhân viên đăng nhập vào hệ thống với tài khoản của mình.
+*Kiểm tra lịch đặt sân:
+
++Xem danh sách lịch đặt sân theo ngày, tuần, tháng.
++Xác nhận trạng thái sân (đang sử dụng, cần bảo trì)
+*Hỗ trợ khách hàng:
+Ghi nhận thông tin đặt sân từ khách hàng trực tiếp hoặc qua điện thoại.
+Hỗ trợ khách hàng chỉnh sửa hoặc hủy đặt sân.
+*Quản lý sân bóng:
+Kiểm tra, cập nhật tình trạng sân bóng.
+Báo cáo sự cố cần sửa chữa hoặc bảo trì sân
+*Xử lý thanh toán:
+Hỗ trợ khách hàng thanh toán trực tiếp hoặc qua hệ thống
+Xác nhận các khoản tiền thu được và gửi thông tin lên quản lý.
+*Gửi thông báo:
+Thông báo cho khách hàng về tình trạng sân hoặc các chương trình ưu đãi.
+*Preconditions (Điều kiện tiên quyết):
+Nhân viên đã được cấp tài khoản và quyền truy cập vào hệ thống.
+Hệ thống có dữ liệu cập nhật về sân bóng và lịch đặt sân.
+*Postconditions (Kết quả):
+Lịch đặt sân và trạng thái sân bóng được cập nhật chính xác.
+Khách hàng nhận được hỗ trợ đầy đủ.
+*Các kịch bản phụ:
+Khách hàng đến đặt sân trực tiếp: Nhân viên nhập thông tin vào hệ thống.
+Phát hiện sân cần bảo trì: Nhân viên gửi báo cáo cho quản lý.
+![alt](https://docs.google.com/document/d/1P9xJ3b6TQ1Q9-gXcF6QlS1FxMi-BcYd2U9LOCRQ6R8k/edit?tab=t.a6tqoysrmo9u)
+### 4.3.Use case quản lý dịch vụ đi kèm
+*Use Case: Quản lý dịch vụ đi kèm
+*Actor (Người thực hiện): Quản lý hoặc nhân viên.
+*Mục tiêu chính: Quản lý hiệu quả các dịch vụ bổ sung nhằm phục vụ khách hàng (như cho thuê bóng, áo đấu, nước uống, v.v.).
+*Luồng chính (Main Flow):
+-Đăng nhập:
+Quản lý/nhân viên đăng nhập vào hệ thống bằng tài khoản có quyền truy cập.
+-Cập nhật danh sách dịch vụ:
+Thêm dịch vụ mới (tên, mô tả, giá cả, trạng thái).
+Chỉnh sửa thông tin dịch vụ hiện tại (ví dụ: cập nhật giá hoặc trạng thái còn/hết hàng).
+Xóa dịch vụ không còn cung cấp.
+-Quản lý tồn kho (nếu có):
+Kiểm tra số lượng tồn kho của các dịch vụ (như bóng, áo đấu, khăn).
+Cập nhật số lượng khi nhập thêm hoặc khi dịch vụ được sử dụng.
+-Xử lý yêu cầu dịch vụ:
+Ghi nhận yêu cầu dịch vụ từ khách hàng.
+Cập nhật hóa đơn kèm theo dịch vụ đi kèm.
+-Báo cáo và thống kê:
+Xem báo cáo doanh thu từ các dịch vụ đi kèm.
+Theo dõi lịch sử sử dụng dịch vụ để tối ưu hóa việc cung cấp.
+*Điều kiện tiên quyết (Preconditions):
+Tài khoản quản lý hoặc nhân viên có quyền truy cập chức năng dịch vụ đi kèm.
+Dịch vụ đã được thiết lập trong hệ thống.
+*Kết quả (Postconditions):
++Thông tin dịch vụ được cập nhật chính xác.
++Yêu cầu dịch vụ của khách hàng được xử lý đầy đủ.
++Doanh thu từ dịch vụ đi kèm được thống kê.
+*Các kịch bản phụ (Alternate Scenarios):
+Dịch vụ hết hàng:
++Hệ thống thông báo dịch vụ không khả dụng, yêu cầu cập nhật tồn kho.
+*Khách hàng thay đổi yêu cầu:
++Nhân viên chỉnh sửa hóa đơn để phản ánh thay đổi.
+![alt](https://docs.google.com/document/d/1P9xJ3b6TQ1Q9-gXcF6QlS1FxMi-BcYd2U9LOCRQ6R8k/edit?tab=t.4v1uuacfodhu)
+
+
+
+
+
+
+
+
 
 
