@@ -1,0 +1,91 @@
+##4.USE CASE CHO TỪNG BỘ PHẬN
+###4.1.Use case của quản lý sân bóng
+
+*Use Case: Người quản lý 
+**Actor (Người thực hiện): Quản lý sân bóng.
+- Mục tiêu chính: Quản lý hiệu quả hoạt động của sân bóng thông qua hệ thống.
+- Các bước thực hiện:
+--Đăng nhập: Người quản lý đăng nhập vào hệ thống bằng tài khoản.
+--Quản lý sân bóng:
+Cập nhật thông tin sân bóng (tên sân, loại sân, trạng thái).
+Kiểm tra lịch trống và các lượt đặt sân.
+--Quản lý đặt sân:
+Xem danh sách các lượt đặt sân.
+Phê duyệt hoặc hủy đặt sân nếu cần thiết.
+--Quản lý tài chính:
+Theo dõi doanh thu từ các lượt đặt sân.
+Quản lý hóa đơn và xử lý thanh toán thủ công (nếu có).
+--Gửi thông báo:
+Thông báo cho khách hàng về thay đổi, khuyến mãi, hoặc hủy đặt sân.
+--Báo cáo: Xem các báo cáo tổng hợp về hoạt động, doanh thu, và lượt đặt sân.
+--Preconditions (Điều kiện tiên quyết):
+Người quản lý đã được cấp tài khoản.
+Hệ thống có dữ liệu sân bóng.
+--Postconditions (Kết quả):
+Thông tin sân và lịch đặt sân được cập nhật.
+Doanh thu được thống kê chính xác.
+--Các kịch bản phụ:
+Người quản lý quên mật khẩu: Sử dụng tính năng “Quên mật khẩu” để khôi phục.
+Khách hàng hủy đặt sân: Quản lý xác nhận và cập nhật lại trạng thái.
+
+###4.2.Use case quản lý nhân viên
+
+Đặc Tả Use Case Quản Lý Nhân Viên
+1. Các Chủ Thể
+++Nhân viên thường: Quản lý lịch đặt sân, cập nhật trạng thái sân, chăm sóc khách hàng.
+++Quản lý: Quản lý sân bóng, đội ngũ nhân viên, thống kê doanh thu, xử lý thanh toán, công nợ và hóa đơn.
+++Chủ sân: Giám sát hệ thống, thống kê doanh thu, và quản lý nhân viên.
+2. Các Use Case Chính
+2.1. Phân Quyền Nhân Viên
+++Chủ thể: Quản lý, Chủ sân.
+++Mô tả: Thiết lập quyền truy cập cho từng nhóm nhân viên theo nhiệm vụ.
+++Kết quả: Các nhóm quyền truy cập được thiết lập trong hệ thống.
+2.2. Theo Dõi Lịch Sử Hoạt Động
+++Chủ thể: Quản lý, Chủ sân.
+++Mô tả: Lưu lại thông tin các thao tác của nhân viên, bao gồm người đặt sân, hủy sân, thu tiền, phục vụ khách hàng.
+++Kết quả: Thống kê chi tiết lịch sử hoạt động của nhân viên.
+3. Sơ Đồ Use Case
+++Chủ sân: Quản lý tổng thể nhân viên và hệ thống.
+++Quản lý: Phân quyền, theo dõi lịch sử hoạt động.
+Nhân viên: Thực hiện các thao tác đặt sân, phục vụ và quản lý khách hàng.
+
+###4.3.Use case quản lý dịch vụ đi kèm
+*Use Case: Quản lý dịch vụ đi kèm
+*Actor (Người thực hiện): Quản lý hoặc nhân viên.
+*Mục tiêu chính: Quản lý hiệu quả các dịch vụ bổ sung nhằm phục vụ khách hàng (như cho thuê bóng, áo đấu, nước uống, v.v.).
+*Luồng chính (Main Flow):
+--Đăng nhập:
+Quản lý/nhân viên đăng nhập vào hệ thống bằng tài khoản có quyền truy cập.
+--Cập nhật danh sách dịch vụ:
+Thêm dịch vụ mới (tên, mô tả, giá cả, trạng thái).
+Chỉnh sửa thông tin dịch vụ hiện tại (ví dụ: cập nhật giá hoặc trạng thái còn/hết hàng).
+Xóa dịch vụ không còn cung cấp.
+--Quản lý tồn kho (nếu có):
+Kiểm tra số lượng tồn kho của các dịch vụ (như bóng, áo đấu, khăn).
+Cập nhật số lượng khi nhập thêm hoặc khi dịch vụ được sử dụng.
+--Xử lý yêu cầu dịch vụ:
+Ghi nhận yêu cầu dịch vụ từ khách hàng.
+Cập nhật hóa đơn kèm theo dịch vụ đi kèm.
+--Báo cáo và thống kê:
+Xem báo cáo doanh thu từ các dịch vụ đi kèm.
+Theo dõi lịch sử sử dụng dịch vụ để tối ưu hóa việc cung cấp.
+*Điều kiện tiên quyết (Preconditions):
+Tài khoản quản lý hoặc nhân viên có quyền truy cập chức năng dịch vụ đi kèm.
+Dịch vụ đã được thiết lập trong hệ thống.
+*Kết quả (Postconditions):
+Thông tin dịch vụ được cập nhật chính xác.
+Yêu cầu dịch vụ của khách hàng được xử lý đầy đủ.
+Doanh thu từ dịch vụ đi kèm được thống kê.
+*Các kịch bản phụ (Alternate Scenarios):
+--Dịch vụ hết hàng:
++Hệ thống thông báo dịch vụ không khả dụng, yêu cầu cập nhật tồn kho.
+Khách hàng thay đổi yêu cầu:
++Nhân viên chỉnh sửa hóa đơn để phản ánh thay đổi.
+
+
+
+
+
+
+
+
